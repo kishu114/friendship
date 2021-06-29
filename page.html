@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <title>Card Website</title>
+</head>
+<body>
+<div class="context">
+  <button onclick="typeWriter()" class="btn"><a href="#">Click me</a></button>
+			<p id="demo"></p>
+</div>
+
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+              
+            </div >
+<script>
+		var i = 0;
+var txt = 'Dear Best Friend💓,I don’t care what anyone else thinks, but I really think you’re the best.Your amazing set of qualities set you apart from everyone else.You’ve been there through the good and the bad times. You’ve been a constant throughout the ups and downs of life.We’ve been through it all, navigating life together and every blessed day, when I count my blessings, you’re always number one.With you in my life, I know I don’t have to look over my shoulders because you’re there watching my back.Since your coming into my life, I’ve been better than I ever was. I keep getting better with each passing day and it’s all because of the example in loving you’ve shown me.Can I talk about your energy? Boundless💗! Awesome💗! Admirable💗! It’s like there’s an ever-flowing spring of energy flowing from your soul. You tirelessly go about doing all that you believe in. Nothing discourages you, nothing stops you. Once you set your mind on it, you go for it. It’s so amazing to watch you when you’re this way.You’re my best friend and a dear friend to so many more people we know.There’s no dull moment around you. You’re the type of person everyone loves to love.You’re always the first to give without asking for anything in return.I’m glad I get to be around you and have your kindness warm my heart too.If I could go back in time, if I had to choose again, I’d still choose you to be my best friend💞.You’re more than a brother, you’ve become a brother, my blood and I’m certain I couldn’t live without you.You’re way stronger than you know. You are incredibly powerful. You are mindlessly beautiful. You are kind. You are grounded.You are awesome and I totally, absolutely love💘 you.You are all of this and more, an incredibly awesome package.If you think I’m writing all of this to make you feel good, you’re right, because you deserve to know the truth about yourself and you deserve the feeling of goodness that comes with that knowledge.I have never met anyone as incredible as you are. Please don’t ever change. Don’t ever let bad people get to you. Keep being the bundle of awesomeness that you are.Thank you for being there when I was at my lowest. You helped me navigate those difficult times. You helped me pick myself up and start all over again.You were the voice of reason that kept drumming into my head that everything will be fine. And you were right, everything turned out all right.You are empathetic, always watching out for other’s well beingsIf the world had more people like you, it would definitely be a better place.I want you to know I will always be there for you, just as you’ve always been here for me.I want you to know that you deserve the very best in life, so don’t ever settle for less.I want you to know that one someday, one day soon, you will achieve all of your dreams and I will be here to celebrate with you.I want you to know that I’ve got your back always. All those plans we made, all those places we promised to visit, we will, definitely.I celebrate you, best friend💞, today and always. Thank you for every time.You know… Sometimes words just aren’t enough to describe our feelings to a loved one. To someone who means the world to you… The world and so much more… That special someone and the person with whom I share the strongest and deepest connection is my bestie.LOVE💕 ALWAYS, YOUR BEST FRIEND💘...';
+
+
+var speed = 50;
+
+function typeWriter() {
+    var audio = new Audio('song.mp3');
+  audio.play();
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+	</script>
+</body>
+</html>
